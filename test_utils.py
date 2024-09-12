@@ -26,12 +26,11 @@ def test_cosine_similarity():
 def test_nearest_neighbor():
     ### YOUR CODE HERE
     points = np.array([
-        [1, 2],
-        [3, 4],
-        [5, 6]
+        [1, 0],
+        [0, 1],
+        [1, 1]
     ])
-    
-    target = np.array([2, 3])
+    target = np.array([0.5, 0.5])
     
     result = nearest_neighbor(points, target)
     
